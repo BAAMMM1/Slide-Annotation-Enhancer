@@ -46,8 +46,8 @@ public class Main {
 
         }
 
-
     }
+
 
     private static String getFileExtension(File file) {
         String fileName = file.getName();
@@ -55,8 +55,6 @@ public class Main {
             return fileName.substring(fileName.lastIndexOf(".")+1);
         else return "";
     }
-
-
 
 
 }
