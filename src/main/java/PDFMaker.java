@@ -4,6 +4,8 @@ import java.io.File;
 import java.io.IOException;
 
 /**
+ * PDFMaker
+ *
  * @author Chris on 31.07.2018
  */
 public class PDFMaker {
