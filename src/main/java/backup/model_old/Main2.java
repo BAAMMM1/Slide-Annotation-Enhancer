@@ -1,24 +1,15 @@
-import org.apache.pdfbox.cos.COSDictionary;
-import org.apache.pdfbox.cos.COSName;
-import org.apache.pdfbox.multipdf.LayerUtility;
-import org.apache.pdfbox.pdmodel.PDDocument;
-import org.apache.pdfbox.pdmodel.PDPage;
-import org.apache.pdfbox.pdmodel.PDPageContentStream;
-import org.apache.pdfbox.pdmodel.common.PDRectangle;
-import org.apache.pdfbox.pdmodel.graphics.form.PDFormXObject;
+package backup.model_old;
 
-import java.awt.geom.AffineTransform;
 import java.io.File;
 import java.io.IOException;
-import java.util.List;
 
 /**
  * @author Chris on 31.07.2018
  */
-public class Main {
+public class Main2 {
 
 
-    private static final String SOURCE_DIRECTORY = "test.pdf";
+    private static final String SOURCE_DIRECTORY = "D:\\hawCloud\\HAW Unterlagen\\13 Semester\\Intelligente Systeme\\1. Folien\\IS-03 - Logik.pdf";
     private static final String TYPE = "se"; // se or gka
 
     public static void main(String[] args) throws IOException {

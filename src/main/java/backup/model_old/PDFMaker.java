@@ -1,10 +1,12 @@
+package backup.model_old;
+
 import org.apache.pdfbox.pdmodel.PDDocument;
 
 import java.io.File;
 import java.io.IOException;
 
 /**
- * PDFMaker
+ * backup.model_old.PDFMaker
  *
  * @author Chris on 31.07.2018
  */
@@ -18,16 +20,17 @@ public class PDFMaker {
         PDDocument toAdd;
 
         if(type.equals("se")){
-            toAdd = PDDocument.load(new File("se.pdf"));
+            toAdd = PDDocument.load(new File("src/main/resources/slides/lined.pdf"));
         } else if (type.equals("gka")){
-            toAdd = PDDocument.load(new File("gka.pdf"));
+            toAdd = PDDocument.load(new File("src/main/resources/slides/squared.pdf"));
         } else {
-            toAdd = PDDocument.load(new File("se.pdf"));
+            toAdd = PDDocument.load(new File("src/main/resources/slides/lined.pdf"));
         }
+
 
         for(int i = 0; i < source.getNumberOfPages(); i++){
             target.addPage(source.getPage(i));
-            target.addPage( toAdd.getPage(0));
+            target.addPage(toAdd.getPage(i)); // TODO Falls vorlage zu klein, bsp se max 140 Seiten
         }
 
 

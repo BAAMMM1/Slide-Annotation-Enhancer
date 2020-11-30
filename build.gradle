@@ -1,5 +1,6 @@
 plugins {
     id 'java'
+    id "org.sonarqube" version "2.6.2"
 }
 
 group 'OP-PDF-LectureSlides'
@@ -9,9 +10,24 @@ sourceCompatibility = 1.8
 
 repositories {
     mavenCentral()
+    flatDir {
+        dirs 'lib'
+    }
 }
 
 dependencies {
     testCompile group: 'junit', name: 'junit', version: '4.12'
     compile group: 'org.apache.pdfbox', name: 'pdfbox', version: '2.0.1'
+    implementation name: 'GUIDecorator'
+
+}
+
+jar {
+    manifest {
+        attributes "Main-Class": "LectureSliderMain"
+    }
+
+    from {
+        configurations.runtimeClasspath.collect { it.isDirectory() ? it : zipTree(it) }
+    }
 }
