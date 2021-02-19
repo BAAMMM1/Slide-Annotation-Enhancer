@@ -3,6 +3,6 @@
 
 Projekt im Rahmen des Intelligente Systeme Praktikum zum Thema Lernen - Neuronale Netzwerke
 
-![](https://github.com/BAAMMM1/OP-PDF-LectureSlides/blob/master/teaser.gif)
+![](https://raw.githubusercontent.com/BAAMMM1/OP-PDF-LectureSlides/master/teaser.jpg?token=AEASYWST5KFO634DD4ORCG3AGAE7Y)
 
 </div>
