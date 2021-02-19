@@ -32,7 +32,7 @@ public class LectureSliderMain extends Application {
         GUIDecorator decorator = new GUIDecorator();
         decorator.decorate(primaryStage);
         decorator.setTitelbarSVGIconContent(SVG_ICON_TITELBAR_LOGO);
-        decorator.setRepositoryURL("");
+        decorator.setRepositoryURL("https://github.com/BAAMMM1/OP-PDF-LectureSlides");
         decorator.setBtnTitelbarFullscreenDisable(true);
         decorator.setBtnTitelbarFullscreenVisible(false);
 
