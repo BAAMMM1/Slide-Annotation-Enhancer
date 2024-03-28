@@ -1,4 +1,4 @@
-# OP-PDF-LectureSlides
+# PDF Slide Annotation Enhancer
 ## Description
 A Tool for adding a writing area to lecture slides.
 
