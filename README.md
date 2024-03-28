@@ -1,4 +1,9 @@
 # OP-PDF-LectureSlides
+## Description
+A Tool for adding a writing area to lecture slides.
+
+![](https://github.com/BAAMMM1/OP-PDF-LectureSlides/blob/master/teaser.jpg)
+
 ## Requirements
 - JDK v21 installed on your machine
 
@@ -12,11 +17,3 @@ For Windows:
 ```
 .\gradlew.bat run
 ```
-
-<div align="center">
-
-Tool um einen Schreibbereich zu Vorlesungsfolien hinzuzufügen
-
-![](https://github.com/BAAMMM1/OP-PDF-LectureSlides/blob/master/teaser.jpg)
-
-</div>
