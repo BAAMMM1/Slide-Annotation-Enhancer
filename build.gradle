@@ -1,53 +1,44 @@
-buildscript {
-    dependencies {
-        classpath group: 'de.dynamicfiles.projects.gradle.plugins', name: 'javafx-gradle-plugin', version: '8.8.2'
-    }
-    repositories {
-        mavenLocal()
-        mavenCentral()
-        flatDir {
-            dirs 'lib'
-        }
-    }
-}
-
 plugins {
     id 'java'
     id 'application'
+    id 'org.openjfx.javafxplugin' version '0.1.0'
 }
 
-mainClassName = "LectureSliderMain"
+project.ext {
+   javaMainClass = 'LectureSliderMain'
+}
 
-group 'OP-PDF-LectureSlides'
-version '1.0-SNAPSHOT'
+run {
+    mainClass.set(javaMainClass)
+}
 
-sourceCompatibility = 1.8
-
-apply plugin: 'java'
-
-repositories {
-    mavenLocal()
-    mavenCentral()
-    flatDir {
-        dirs 'lib'
+jar {
+    manifest {
+        attributes 'Main-Class': javaMainClass
     }
 }
 
+task fatJar (type: Jar) {
+    duplicatesStrategy = DuplicatesStrategy.EXCLUDE
+    manifest {
+        attributes 'Main-Class': javaMainClass
+    }
+    from {
+        configurations.runtimeClasspath.collect { it.isDirectory() ? it : zipTree(it) }
+    }
+    with jar
+}
+
+javafx {
+    version = "22"
+    modules = [ 'javafx.controls', 'javafx.fxml' ]
+}
+
+
+repositories {
+    mavenCentral()
+}
+
 dependencies {
-    testCompile group: 'junit', name: 'junit', version: '4.12'
-    compile group: 'org.apache.pdfbox', name: 'pdfbox', version: '2.0.1'
-    implementation name: 'GUIDecorator'
-
+    implementation 'org.apache.pdfbox:pdfbox:2.0.1'
 }
-
-apply plugin: 'javafx-gradle-plugin'
-
-
-jfx {
-    // minimal requirement for jfxJar-task
-    mainClass = 'LectureSliderMain'
-
-    // minimal requirement for jfxNative-task
-    vendor = 'YourName'
-}
-
