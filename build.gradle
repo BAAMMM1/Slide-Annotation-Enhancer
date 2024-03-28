@@ -34,7 +34,6 @@ javafx {
     modules = [ 'javafx.controls', 'javafx.fxml' ]
 }
 
-
 repositories {
     mavenCentral()
 }
