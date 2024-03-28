@@ -15,6 +15,7 @@ repositories {
 
 dependencies {
     implementation 'org.apache.pdfbox:pdfbox:2.0.31'
+    implementation files('libs/javafx-gui-decorator-0.1.0.jar')
 }
 
 
