@@ -1,4 +1,4 @@
-package model;
+package dev.graumann.slideannotationenhancer.model;
 
 import java.io.File;
 import java.net.URISyntaxException;

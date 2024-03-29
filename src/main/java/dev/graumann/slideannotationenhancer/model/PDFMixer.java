@@ -1,4 +1,4 @@
-package model;
+package dev.graumann.slideannotationenhancer.model;
 
 import org.apache.pdfbox.pdmodel.PDDocument;
 import org.apache.pdfbox.pdmodel.PDPage;
@@ -15,8 +15,8 @@ import java.util.List;
  */
 public class PDFMixer {
 
-    public static final String PATH_SLIDE_LINED = "../slides/lined.pdf";
-    public static final String PATH_SLIDE_SQUARED = "../slides/squared.pdf";
+    public static final String PATH_SLIDE_LINED = "/slides/lined.pdf";
+    public static final String PATH_SLIDE_SQUARED = "/slides/squared.pdf";
 
     private List<Slide> slides;
 

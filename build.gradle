@@ -3,11 +3,11 @@ plugins {
     id 'java'
     id 'application'
     id 'org.openjfx.javafxplugin' version '0.1.0'
-    //id "org.beryx.jlink" version "3.0.1"
+    id "org.beryx.jlink" version "3.0.1"
 }
 
 project.ext {
-   javaMainClass = 'LectureSliderMain'
+   javaMainClass = 'dev.graumann.slideannotationenhancer.LectureSliderMain'
 }
 
 repositories {
@@ -16,7 +16,7 @@ repositories {
 
 dependencies {
     implementation 'org.apache.pdfbox:pdfbox:2.0.31'
-    implementation files('libs/javafx-gui-decorator-0.1.0.jar')
+    implementation files('libs/javafx-gui-decorator-0.2.0.jar')
 }
 
 
@@ -55,7 +55,7 @@ task fatJar (type: Jar) {
     with jar
 }
 
-/*
+
 jlink{
     launcher{
         name = 'Test'
@@ -69,4 +69,3 @@ jlink{
         ]
     }
 }
-*/
