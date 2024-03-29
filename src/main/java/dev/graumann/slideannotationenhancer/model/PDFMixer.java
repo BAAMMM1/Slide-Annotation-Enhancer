@@ -15,8 +15,8 @@ import java.util.List;
  */
 public class PDFMixer {
 
-    public static final String PATH_SLIDE_LINED = "/slides/lined.pdf";
-    public static final String PATH_SLIDE_SQUARED = "/slides/squared.pdf";
+    public static final String PATH_SLIDE_LINED = "/dev/graumann/slideannotationenhancer/slides/lined.pdf";
+    public static final String PATH_SLIDE_SQUARED = "/dev/graumann/slideannotationenhancer/slides/squared.pdf";
 
     private List<Slide> slides;
 

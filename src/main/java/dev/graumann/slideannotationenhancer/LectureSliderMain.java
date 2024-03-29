@@ -11,7 +11,7 @@ import dev.graumann.guidecorator.GUIDecorator;
 
 public class LectureSliderMain extends Application {
 
-    private static final String MAIN_VIEW_PATH = "/fxml/main.fxml";
+    private static final String MAIN_VIEW_PATH = "/dev/graumann/slideannotationenhancer/fxml/main.fxml";
     private static final String STAGE_TITLE = "Slide Annotation Enhancer";
 
     private static final String SVG_ICON_TITELBAR_LOGO = "M11.99 18.54l-7.37-5.73L3 14.07l9 7 9-7-1.63-1.27zM12 16l7.36-5.73L21 9l-9-7-9 7 1.63 1.27L12 16zm0-11.47L17.74 9 12 13.47 6.26 9 12 4.53z";
