@@ -1,4 +1,4 @@
-package controller;
+package dev.graumann.slideannotationenhancer.controller;
 
 import javafx.event.EventHandler;
 import javafx.fxml.FXML;
@@ -10,8 +10,8 @@ import javafx.scene.control.ListView;
 import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.AnchorPane;
 import javafx.stage.FileChooser;
-import model.PDFMixer;
-import model.Slide;
+import dev.graumann.slideannotationenhancer.model.PDFMixer;
+import dev.graumann.slideannotationenhancer.model.Slide;
 
 import java.io.File;
 import java.net.URL;

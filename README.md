@@ -1,19 +1,32 @@
-# PDF Slide Annotation Enhancer
+# Slide Annotation Enhancer
 ## Description
-A Tool for adding a writing area to lecture slides.
+A Tool for adding a writing area to lecture slides pdf's.
 
 ![](https://github.com/BAAMMM1/OP-PDF-LectureSlides/blob/master/teaser.jpg)
 
 ## Requirements
-- JDK v21 installed on your machine
+- Java JDK v21 installed on your machine
 
 ## How to run?
-For Linux:
+Linux:
 ```
 ./gradlew run
 ```
 
-For Windows:
+Windows:
 ```
 .\gradlew.bat run
 ```
+
+## How to create a standalone application?
+Linux:
+```
+./gradlew jpackage
+```
+
+Windows:
+```
+.\gradlew.bat jpackage
+```
+
+You can find the installer in `build/installers/` or the application in `build/jpackage`.

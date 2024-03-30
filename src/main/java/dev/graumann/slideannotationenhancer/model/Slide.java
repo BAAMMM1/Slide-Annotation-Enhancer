@@ -1,7 +1,7 @@
-package model;
+package dev.graumann.slideannotationenhancer.model;
 
 import java.io.File;
-import java.net.URISyntaxException;
+// import java.net.URISyntaxException;
 
 public class Slide {
 
@@ -11,9 +11,17 @@ public class Slide {
     public Slide(String name, String path) {
 
         this.name = name;
+        /*
         try {
-            file = new File(this.getClass().getResource(path).toURI());
+            file = new File(this.getClass().getResource(path).toExternalForm());
         } catch (URISyntaxException e) {
+            e.printStackTrace();
+        }
+        */
+
+        try {
+            file = new File(this.getClass().getResource(path).toExternalForm());
+        } catch (Exception e) {
             e.printStackTrace();
         }
     }

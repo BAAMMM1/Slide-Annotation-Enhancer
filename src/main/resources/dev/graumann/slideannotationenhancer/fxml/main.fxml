@@ -6,13 +6,13 @@
 <?import javafx.scene.shape.*?>
 <?import javafx.scene.text.*?>
 
-<AnchorPane fx:id="rootPane" style="-fx-background-color: #FFFFFF;" stylesheets="@../css/style.css" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.MainController">
+<AnchorPane fx:id="rootPane" style="-fx-background-color: #FFFFFF;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="dev.graumann.slideannotationenhancer.controller.MainController">
    <children>
-      <AnchorPane styleClass="nav-pane" stylesheets="@../css/style.css" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+      <AnchorPane styleClass="nav-pane" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
          <children>
             <HBox alignment="CENTER_LEFT" spacing="4.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="0.0">
                <children>
-                  <Button fx:id="btnFileChooser" styleClass="button" stylesheets="@../css/style.css" text="Files">
+                  <Button fx:id="btnFileChooser" styleClass="button" text="Files">
                      <graphic>
                         <SVGPath content="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z" styleClass="svg" />
                      </graphic>
@@ -21,15 +21,15 @@
                      </font>
                   </Button>
                   <Separator maxHeight="40.0" orientation="VERTICAL" />
-                  <Button fx:id="btnFileClear" styleClass="button" stylesheets="@../css/style.css" text="Clear">
+                  <Button fx:id="btnFileClear" styleClass="button" text="Clear">
                      <graphic>
                         <SVGPath content="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z" styleClass="svg" />
                      </graphic>
                   </Button>
                   <Separator layoutX="114.0" layoutY="20.0" maxHeight="40.0" orientation="VERTICAL" />
-                  <ComboBox fx:id="cBSlide" styleClass="combo-box" stylesheets="@../css/style.css" />
+                  <ComboBox fx:id="cBSlide" styleClass="combo-box" />
                   <Separator layoutX="114.0" layoutY="20.0" maxHeight="40.0" orientation="VERTICAL" />
-                  <Button fx:id="btnStart" styleClass="button" stylesheets="@../css/style.css" text="Merge">
+                  <Button fx:id="btnStart" styleClass="button" text="Merge">
                      <graphic>
                         <SVGPath content="M10 8.64L15.27 12 10 15.36V8.64M8 5v14l11-7L8 5z" styleClass="svg" />
                      </graphic>
