@@ -16,7 +16,7 @@ repositories {
 
 dependencies {
     implementation 'org.apache.pdfbox:pdfbox:2.0.31'
-    implementation files('libs/javafx-gui-decorator-0.2.0.jar')
+    implementation files('libs/javafx-gui-decorator-0.2.1-SNAPSHOT.jar')
 }
 
 
@@ -62,7 +62,7 @@ task fatJar (type: Jar) {
 
 jlink{
     launcher{
-        name = 'Test'
+        name = 'Slide Annotation Enhancer'
     }
     jpackage{
         installerOutputDir = file( "build/installers" )
