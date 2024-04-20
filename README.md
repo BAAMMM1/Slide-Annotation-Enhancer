@@ -3,7 +3,7 @@
 
 
 ## Description
-A Tool for adding a writing area to lecture slides pdf's.
+A tool for adding a writing area to lecture slide PDFs.
 
 ![](https://github.com/BAAMMM1/OP-PDF-LectureSlides/blob/master/teaser.jpg)
 
