@@ -17,16 +17,3 @@ Windows:
 ```
 .\gradlew.bat run
 ```
-
-## How to create a standalone application?
-Linux:
-```
-./gradlew jpackage
-```
-
-Windows:
-```
-.\gradlew.bat jpackage
-```
-
-You can find the installer in `build/installers/` or the application in `build/jpackage`.
