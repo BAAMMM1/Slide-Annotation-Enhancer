@@ -6,32 +6,21 @@ import java.io.File;
 public class Slide {
 
     private String name;
-    private File file;
+    private String path;
 
     public Slide(String name, String path) {
 
         this.name = name;
-        /*
-        try {
-            file = new File(this.getClass().getResource(path).toExternalForm());
-        } catch (URISyntaxException e) {
-            e.printStackTrace();
-        }
-        */
+        this.path = path;
 
-        try {
-            file = new File(this.getClass().getResource(path).toExternalForm());
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
     }
 
     public String getName() {
         return name;
     }
 
-    public File getFile() {
-        return file;
+    public String getPath(){
+        return path;
     }
 
     @Override

@@ -28,27 +28,34 @@ public class PDFMixer {
         slides.add(squared);
     }
 
-    public boolean makePDF(Slide slide, ArrayList<File> files) {
+    public boolean makePDF(Slide anotationSlideType, ArrayList<File> files) {
         if(files.isEmpty()) return false;
 
         try {
+
+            
 
             for (File file : files) {
                 PDDocument target = new PDDocument();
                 PDDocument source = PDDocument.load(file);
 
                 for (int i = 0; i < source.getNumberOfPages(); i++) {
+                    PDPage anotationPage = PDDocument.load(this.getClass().getResourceAsStream(anotationSlideType.getPath())).getPage(0);
+                    
                     target.addPage(source.getPage(i));
-                    target.addPage(PDDocument.load(slide.getFile()).getPage(0));
+                    target.addPage(anotationPage);
                 }
 
-                target.save(new File(file.getParent() + "\\" + file.getName().substring(0, file.getName().indexOf(".pdf")) + "_" + slide.getName() + ".pdf"));
+                target.save(new File(
+                    file.getParent() + System.getProperty("file.separator") + file.getName().substring(0, file.getName().indexOf(".pdf")) + "_" + anotationSlideType.getName() + ".pdf"));
                 source.close();
                 target.close();
             }
 
 
         } catch (Exception e){
+            System.out.println(e.getMessage());
+            e.printStackTrace();
             return false;
         }
 
