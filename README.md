@@ -4,7 +4,7 @@
 ## Description
 A tool for adding a writing area to lecture slide PDFs.
 
-![](https://github.com/BAAMMM1/OP-PDF-LectureSlides/blob/master/teaser.jpg)
+![](https://github.com/BAAMMM1/Slide-Annotation-Enhancer/blob/4d7dd48012d59d93e06124bf01a769aee534c8e2/images/teaser.jpg)
 
 ## Requirements
 - Java JDK v21 installed on your machine
