@@ -1,8 +1,5 @@
 package dev.graumann.slideannotationenhancer.model;
 
-import java.io.File;
-// import java.net.URISyntaxException;
-
 public class Slide {
 
     private String name;

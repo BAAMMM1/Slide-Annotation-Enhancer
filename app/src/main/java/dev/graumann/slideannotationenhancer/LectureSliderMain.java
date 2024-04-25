@@ -19,7 +19,7 @@ public class LectureSliderMain extends Application {
 
 
     @Override
-    public void start(Stage primaryStage) throws Exception {
+    public void start(@SuppressWarnings("exports") Stage primaryStage) throws Exception {
 
         FXMLLoader fxmlLoader = new FXMLLoader(this.getClass().getResource(MAIN_VIEW_PATH));
         Parent userContent = fxmlLoader.load();
